@@ -1,0 +1,2 @@
+#!/bin/sh
+RUBY_THREAD_VM_STACK_SIZE=268435456 ruby "$1"
