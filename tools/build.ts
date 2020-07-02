@@ -17,7 +17,7 @@ for await (const env of envs) {
       `build`,
       `-t`,
       `n4o847/atcoder-envs-${env.id}:latest`,
-      `envs/${env.id}`,
+      `./envs/${env.id}`,
     ],
   });
   await p.status();
