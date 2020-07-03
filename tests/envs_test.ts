@@ -30,8 +30,8 @@ for (const env of envs) {
       const { code } = await p.status();
       assertEquals(code, 0);
       assertEquals(
-        await p.output(),
-        await Deno.readFile("./tests/assets/practice_1/sample-1.out"),
+        new TextDecoder().decode(await p.output()),
+        await Deno.readTextFile("./tests/assets/practice_1/sample-1.out"),
       );
       p.close();
     },
