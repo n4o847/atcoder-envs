@@ -43,6 +43,8 @@ ae run main.rb
 
 ID|Language
 ---|---
+4008|bc (1.07.1)
 4009|Awk (GNU Awk 4.1.4)
+4019|dc (1.4.1)
 4049|Ruby (2.7.1)
 4066|Sed (4.4)
