@@ -1,21 +1,9 @@
 import { assertEquals } from "https://deno.land/std@0.59.0/testing/asserts.ts";
+import { envs } from "../config.ts";
 
-const targets = [
-  {
-    id: "4009",
-    name: "Awk (GNU Awk 4.1.4)",
-    ext: "awk",
-  },
-  {
-    id: "4049",
-    name: "Ruby (2.7.1)",
-    ext: "rb",
-  },
-];
-
-for (const target of targets) {
+for (const env of envs) {
   Deno.test({
-    name: `${target.id}: ${target.name}`,
+    name: `${env.id}: ${env.name}`,
     async fn() {
       const p = Deno.run({
         cmd: [
@@ -27,8 +15,8 @@ for (const target of targets) {
           `-w`,
           `/sandbox`,
           `-i`,
-          `n4o847/atcoder-envs-${target.id}`,
-          `./tests/assets/practice_1.${target.ext}`,
+          `n4o847/atcoder-envs-${env.id}`,
+          `./tests/assets/practice_1.${env.ext}`,
         ],
         stdin: "piped",
         stdout: "piped",
