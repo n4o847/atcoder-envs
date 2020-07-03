@@ -1,0 +1,8 @@
+scale = 0
+a = read()
+b = read()
+if (a * b % 2 == 0) {
+  print "Even\n"
+} else {
+  print "Odd\n"
+}
