@@ -9,4 +9,9 @@ export const envs = [
     name: "Ruby (2.7.1)",
     ext: "rb",
   },
+  {
+    id: "4066",
+    name: "Sed (4.4)",
+    ext: "sed",
+  },
 ];
