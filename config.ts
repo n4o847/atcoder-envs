@@ -17,6 +17,11 @@ export const envs = [
     ext: "dc",
   },
   {
+    id: "4042",
+    name: "Perl (5.26.1)",
+    ext: "pl",
+  },
+  {
     id: "4049",
     name: "Ruby (2.7.1)",
     ext: "rb",
