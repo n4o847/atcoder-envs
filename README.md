@@ -46,5 +46,11 @@ ID|Language
 4008|bc (1.07.1)
 4009|Awk (GNU Awk 4.1.4)
 4019|dc (1.4.1)
+4042|Perl (5.26.1)
 4049|Ruby (2.7.1)
 4066|Sed (4.4)
+
+## Differences from AtCoder's environment
+
+- Runs on Alpine 3.12, not on Ubuntu 18.04 LTS.
+- Perl's version is 5.26.3, not 5.26.1.
